@@ -60,6 +60,7 @@ function obfuscateResponse(request, instance) {
   try {
     request.body = JSON.parse(request.body);
   } catch(err) {
+    console.log(request.body);
     console.log(err);
     throw err;
   }
