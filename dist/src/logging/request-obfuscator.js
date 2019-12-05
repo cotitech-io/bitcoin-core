@@ -58,6 +58,7 @@ function obfuscateResponse(request, instance) {
   }
 
   try {
+    console.log('[RPC Response]:',request.body);
     const body = JSON.parse(request.body);
     request.body = body;
   } catch(err) {
